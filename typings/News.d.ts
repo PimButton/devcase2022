@@ -10,3 +10,8 @@ type NewsContentEntity = {
   layout: "text" | "image";
   content: string;
 };
+
+type NewsEntityModify = NewsEntity & {
+  imgContent: NewsContentEntity | null;
+  textContent: NewsContentEntity[];
+}

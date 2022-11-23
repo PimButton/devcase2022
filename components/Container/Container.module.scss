@@ -3,8 +3,10 @@
 .container {
   width: 100%;
   max-width: 920px;
-  padding: 0 $spacing4;
-  margin: $spacing6 auto;
+  padding: $spacing6 $spacing4;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
 
   @media screen and (min-width: 1024px) {
     padding: initial;

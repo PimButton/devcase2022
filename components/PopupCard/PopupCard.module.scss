@@ -1,0 +1,38 @@
+@import "styles/Variables";
+
+.popup {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  &__blur {
+    background-color: $greyDark;
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__wrap {
+    padding: $spacing6 $spacing4;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  &__card {
+    z-index: 2;
+    padding: $spacing7 0;
+  }
+
+  &__inner {
+    padding: 0 $spacing7;
+    max-height: calc(500px - $spacing7 * 2);
+    overflow: auto;
+  }
+}

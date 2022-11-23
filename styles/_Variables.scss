@@ -3,11 +3,12 @@ $font: "Inter", sans-serif;
 
 // font-sizes
 $font-h1: 23px;
-$font-h2: 17px;
+$font-h2: 23px; // had to change according to the design
 $font-paragraph: 15px;
 $font-sub-title: 14px;
 $font-small: 12px;
 $font-tiny: 10px;
+$fontsize-base: 16px; // to add to html for correct rem calculation 
 
 // Grayscale
 $white: #ffffff;
@@ -21,10 +22,11 @@ $black: #000000;
 $primary: #002f5c;
 $pink: #de016a;
 
-$box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.01);
+$box-shadow: 0 4px 10px rgba(0, 78, 181, 0.12); // had to change according to the design
 
 // border radius
 $border-radius: 14px;
+$border-radius-img: 5px;
 
 // spacing
 $spacing1: 0.25rem;

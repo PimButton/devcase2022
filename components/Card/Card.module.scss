@@ -1,0 +1,57 @@
+@import "styles/Variables";
+
+.card {
+  width: 100%;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  background-color: #ffffff;
+
+  &:not(:last-of-type) {
+    margin-bottom: $spacing5;
+  }
+
+  &__inner {
+    padding: $spacing7;
+    text-align: left;
+    color: $primary;
+  }
+
+  &__title {
+    line-height: 1.2;
+    margin-bottom: $spacing1;
+  }
+
+  &__date {
+    font-size: $font-tiny;
+    color: $pink;
+    font-weight: 300;
+  }
+
+  &__news {
+    margin-top: $spacing6;
+
+    &-img {
+      border-radius: $border-radius-img;
+      overflow: hidden;
+      margin-bottom: $spacing4;
+      img {
+        width: 100%;
+      }
+    }
+
+    &-text {
+      font-weight: 300;
+      font-size: $font-paragraph;
+
+      &:not(:last-of-type) {
+        margin-bottom: 1.06em;
+      }
+    }
+
+    &-cta {
+      margin-top: $spacing2;
+      font-weight: bold;
+      opacity: 0.8;
+    }
+  }
+}
