@@ -15,11 +15,16 @@ export default function Home() {
   const query = useMediaQ("min", 525);
 
   const [clickedItem, setClickedItem] = useState<NewsEntityModify>();
-  const [clicked, setClicked] = useState(false);
+  const [clicked, setClicked] = useState<boolean>(false);
 
   if (isLoading) {
     return <p>Loading...</p>;
   }
+
+  const openPopup = (newsData: NewsEntityModify) => {
+    setClicked(true);
+    setClickedItem(newsData);
+  };
 
   return (
     <div>
@@ -34,8 +39,7 @@ export default function Home() {
               <Card
                 key={item.id}
                 newsData={item}
-                setClickedItem={setClickedItem}
-                setClicked={setClicked}
+                openPopup={openPopup}
               />
             );
           })

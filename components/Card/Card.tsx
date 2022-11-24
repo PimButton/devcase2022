@@ -6,18 +6,11 @@ import { getTrimmedString } from "../../utils/getTrimmedString";
 
 type Props = {
   newsData: NewsEntityModify;
-  setClickedItem: React.Dispatch<
-    React.SetStateAction<NewsEntityModify | undefined>
-  >;
-  setClicked: React.Dispatch<React.SetStateAction<boolean>>;
+  openPopup: (newsData: NewsEntityModify) => void
 };
 
-export default function Card({ newsData, setClickedItem, setClicked }: Props) {
+export default function Card({ newsData, openPopup }: Props) {
   const news = getTrimmedString(newsData.textContent[0].content ?? "", 200);
-  const openPopup = () => {
-    setClicked(true);
-    setClickedItem(newsData);
-  };
   return (
     <div className={styles.card}>
       <div className={styles.card__inner}>
@@ -34,7 +27,7 @@ export default function Card({ newsData, setClickedItem, setClicked }: Props) {
           <p className={styles["card__news-text"]}>{news.text}</p>
 
           {news.isTrimmed ? (
-            <p className={styles["card__news-cta"]} onClick={() => openPopup()}>
+            <p className={styles["card__news-cta"]} onClick={() => openPopup(newsData)}>
               Lees verder…
             </p>
           ) : null}
