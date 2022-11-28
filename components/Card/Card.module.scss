@@ -1,0 +1,29 @@
+@import "styles/Variables";
+
+.container {
+    margin: $spacing4 $spacing4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardTitle {
+    color: $primary;
+}
+
+.cardDate {
+    color: $pink;
+    text-align: left;
+    font-size: $font-tiny;
+    margin: $spacing1 0;
+}
+
+.cardImage {
+    border-radius: 5px;
+    margin: $spacing5 0;
+}
+
+.readMoreButton {
+    margin: 5px 0;
+    font-weight: bold;
+}
