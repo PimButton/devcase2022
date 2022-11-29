@@ -1,22 +1,5 @@
 @import "styles/Variables";
-
-.wrapper {
-  background-color: $white;
-  border-radius: $border-radius;
-  padding: $spacing4;
-  margin: 0 auto;
-  box-shadow: $box-shadow;
-  text-align: center;
-
-  h1 {
-    color: $primary;
-  }
-
-  .resize-warning {
-    color: $pink;
-    margin-top: $spacing2;
-  }
-}
+@import "styles/Font_Maax/FontImport";
 
 .fake-header {
   max-width: 430px;

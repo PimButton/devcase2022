@@ -1,3 +1,5 @@
+@import "styles/Font_Maax/_FontImport.scss";
+
 body {
   font-family: $font;
   color: $black;
@@ -5,10 +7,12 @@ body {
 
 h1 {
   font-size: $font-h1;
+  font-weight: bold;
 }
 
 h2 {
-  font-size: $font-h2;
+  font-size: $font-tiny;
+  font-weight: normal;
 }
 
 p,
@@ -19,6 +23,7 @@ input,
 textarea,
 button {
   font-size: $font-paragraph;
+  line-height: 1.2;
 }
 
 input,

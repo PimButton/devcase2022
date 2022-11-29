@@ -1,5 +1,5 @@
 // font
-$font: "Inter", sans-serif;
+$font: "Maax", "Inter", sans-serif; //Maax needs to be downloaded and imported
 
 // font-sizes
 $font-h1: 23px;
@@ -17,14 +17,16 @@ $grey: #eeeef0;
 $greyDark: #959595;
 $offBlack: #232323;
 $black: #000000;
+
 // Main
 $primary: #002f5c;
 $pink: #de016a;
 
-$box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.01);
+$box-shadow: 0 4px 10px 0 rgba(0, 78, 181, 0.12);
 
 // border radius
 $border-radius: 14px;
+$border-radius-img: 5px;
 
 // spacing
 $spacing1: 0.25rem;
