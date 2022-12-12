@@ -1,0 +1,10 @@
+@import "styles/Variables";
+
+.container {
+    background-color: $white;
+    border-radius: $border-radius;
+    padding: $spacing8;
+    margin-bottom: $spacing8;
+    box-shadow: $box-shadow;
+    text-align: center;
+}
